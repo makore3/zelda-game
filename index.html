@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zelda NES - Web Game</title>
     <link rel="stylesheet" href="style.css">
-    <title>Zelda NES Style Game</title>
 </head>
 <body>
-    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="game-container">
+        <h1>THE LEGEND OF ZELDA</h1>
+        <div id="hud">
+            <div id="health">❤️❤️❤️</div>
+            <div id="rupees">💎 Rupias: <span id="rupeeCount">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="768" height="672"></canvas>
+        <div id="controls">
+            <p>🎮 Controles:</p>
+            <p>⬆️⬇️⬅️➡️ Flechas - Mover</p>
+            <p>⎵ Espacio - Atacar con espada</p>
+        </div>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
